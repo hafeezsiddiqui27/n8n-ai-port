@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import Link from "next/link";
+import Contact from "./Contact";
 
 /* ------------ Animation helpers ------------ */
 const fadeUp = (delay = 0) => ({
@@ -174,6 +175,7 @@ export default function Page() {
         title="Let's talk"
         subtitle="Tell me what you want automated and why it matters."
       >
+        {/* <Contact /> */}
         <Contact />
       </Section>
 
@@ -643,79 +645,97 @@ function Testimonials() {
   );
 }
 
-/* ------------ Contact ------------ */
-function Contact() {
-  return (
-    <div className="max-w-3xl">
-      <form
-        onSubmit={(e) => e.preventDefault()}
-        className="rounded-xl md:rounded-2xl border border-black/10 bg-white p-4 sm:p-6 grid gap-4"
-      >
-        <div className="grid md:grid-cols-2 gap-4">
-          <Field label="Name" placeholder="Your name" />
-          <Field type="email" label="Email" placeholder="you@company.com" />
-        </div>
-        <Field
-          as="textarea"
-          label="Message"
-          placeholder="Describe what you want to automate"
-          rows={6}
-        />
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-black/70 text-center sm:text-left">
-            You&apos;ll receive a response by email.
-          </p>
-          <button
-            type="submit"
-            className="px-6 py-3 rounded-lg bg-black text-white font-medium hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1 w-full sm:w-auto"
-          >
-            Send
-          </button>
-        </div>
-      </form>
+export const socialMedia = [
+  {
+    id: 1,
+    img: "/git.svg",
+    link: "https://github.com",
+  },
+  {
+    id: 2,
+    img: "/twit.svg",
+    link: "https://twitter.com",
+  },
+  {
+    id: 3,
+    img: "/link.svg",
+    link: "https://www.linkedin.com",
+  },
+];
 
-      <div className="mt-6 flex items-center justify-center gap-4">
-        <a
-          href="mailto:	hafeezusiddiqui27@gmail.com"
-          className="px-4 py-2 rounded-lg border border-black/15 hover:bg-black/5 transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-4 w-4"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-          </svg>
-          Email
-        </a>
-        <a
-          href="https://www.linkedin.com/in/hafeez-uddin-ahmed-siddiqui"
-          target="_blank"
-          rel="noreferrer"
-          className="px-4 py-2 rounded-lg border border-black/15 hover:bg-black/5 transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2"
-        >
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7 0h3.8v2.2h.05c.53-1 1.84-2.2 3.8-2.2 4.06 0 4.8 2.67 4.8 6.14V24h-4v-7.1c0-1.7-.03-3.9-2.38-3.9-2.39 0-2.76 1.86-2.76 3.78V24h-4V8z" />
-          </svg>
-          LinkedIn
-        </a>
-        <a
-          href="https://github.com/hafeezsiddiqui27"
-          target="_blank"
-          rel="noreferrer"
-          className="px-4 py-2 rounded-lg border border-black/15 hover:bg-black/5 transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2"
-        >
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.85 3.15 8.96 7.51 10.41.55.1.75-.24.75-.53 0-.26-.01-1.13-.02-2.05-3.06.66-3.71-1.3-3.71-1.3-.5-1.28-1.22-1.62-1.22-1.62-.99-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.58 1.2 3.21.92.1-.71.38-1.2.69-1.47-2.44-.28-5-1.22-5-5.44 0-1.2.43-2.19 1.13-2.96-.11-.28-.49-1.42.11-2.96 0 0 .93-.3 3.05 1.13A10.6 10.6 0 0 1 12 6.8c.94 0 1.88.13 2.76.37 2.12-1.43 3.05-1.13 3.05-1.13.6 1.54.22 2.68.11 2.96.7.77 1.13 1.75 1.13 2.96 0 4.22-2.56 5.16-5.01 5.43.39.33.73.98.73 1.98 0 1.43-.01 2.58-.01 2.93 0 .29.2.64.76.53A10.53 10.53 0 0 0 23 11.5C23 5.24 18.27.5 12 .5z" />
-          </svg>
-          GitHub
-        </a>
-      </div>
-    </div>
-  );
-}
+/* ------------ Contact ------------ */
+// function Contact() {
+//   return (
+//     <div className="max-w-3xl">
+//       <form
+//         onSubmit={(e) => e.preventDefault()}
+//         className="rounded-xl md:rounded-2xl border border-black/10 bg-white p-4 sm:p-6 grid gap-4"
+//       >
+//         <div className="grid md:grid-cols-2 gap-4">
+//           <Field label="Name" placeholder="Your name" />
+//           <Field type="email" label="Email" placeholder="you@company.com" />
+//         </div>
+//         <Field
+//           as="textarea"
+//           label="Message"
+//           placeholder="Describe what you want to automate"
+//           rows={6}
+//         />
+//         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+//           <p className="text-sm text-black/70 text-center sm:text-left">
+//             You&apos;ll receive a response by email.
+//           </p>
+//           <button
+//             type="submit"
+//             className="px-6 py-3 rounded-lg bg-black text-white font-medium hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1 w-full sm:w-auto"
+//           >
+//             Send
+//           </button>
+//         </div>
+//       </form>
+
+//       <div className="mt-6 flex items-center justify-center gap-4">
+//         <a
+//           href="mailto:	hafeezusiddiqui27@gmail.com"
+//           className="px-4 py-2 rounded-lg border border-black/15 hover:bg-black/5 transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2"
+//         >
+//           <svg
+//             xmlns="http://www.w3.org/2000/svg"
+//             className="h-4 w-4"
+//             viewBox="0 0 20 20"
+//             fill="currentColor"
+//           >
+//             <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+//             <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+//           </svg>
+//           Email
+//         </a>
+//         <a
+//           href="https://www.linkedin.com/in/hafeez-uddin-ahmed-siddiqui"
+//           target="_blank"
+//           rel="noreferrer"
+//           className="px-4 py-2 rounded-lg border border-black/15 hover:bg-black/5 transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2"
+//         >
+//           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+//             <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7 0h3.8v2.2h.05c.53-1 1.84-2.2 3.8-2.2 4.06 0 4.8 2.67 4.8 6.14V24h-4v-7.1c0-1.7-.03-3.9-2.38-3.9-2.39 0-2.76 1.86-2.76 3.78V24h-4V8z" />
+//           </svg>
+//           LinkedIn
+//         </a>
+//         <a
+//           href="https://github.com/hafeezsiddiqui27"
+//           target="_blank"
+//           rel="noreferrer"
+//           className="px-4 py-2 rounded-lg border border-black/15 hover:bg-black/5 transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2"
+//         >
+//           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+//             <path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.85 3.15 8.96 7.51 10.41.55.1.75-.24.75-.53 0-.26-.01-1.13-.02-2.05-3.06.66-3.71-1.3-3.71-1.3-.5-1.28-1.22-1.62-1.22-1.62-.99-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.58 1.2 3.21.92.1-.71.38-1.2.69-1.47-2.44-.28-5-1.22-5-5.44 0-1.2.43-2.19 1.13-2.96-.11-.28-.49-1.42.11-2.96 0 0 .93-.3 3.05 1.13A10.6 10.6 0 0 1 12 6.8c.94 0 1.88.13 2.76.37 2.12-1.43 3.05-1.13 3.05-1.13.6 1.54.22 2.68.11 2.96.7.77 1.13 1.75 1.13 2.96 0 4.22-2.56 5.16-5.01 5.43.39.33.73.98.73 1.98 0 1.43-.01 2.58-.01 2.93 0 .29.2.64.76.53A10.53 10.53 0 0 0 23 11.5C23 5.24 18.27.5 12 .5z" />
+//           </svg>
+//           GitHub
+//         </a>
+//       </div>
+//     </div>
+//   );
+// }
 
 /* ------------ Footer ------------ */
 function Footer() {
@@ -786,33 +806,33 @@ function SocialLink({
   );
 }
 
-function Field({
-  label,
-  as,
-  rows,
-  type = "text",
-  placeholder,
-}: {
-  label: string;
-  as?: "textarea";
-  rows?: number;
-  type?: string;
-  placeholder?: string;
-}) {
-  const base =
-    "mt-1 w-full rounded-lg border border-black/15 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black transition-all duration-300";
-  if (as === "textarea") {
-    return (
-      <div>
-        <label className="block text-sm font-medium">{label}</label>
-        <textarea rows={rows} placeholder={placeholder} className={base} />
-      </div>
-    );
-  }
-  return (
-    <div>
-      <label className="block text-sm font-medium">{label}</label>
-      <input type={type} placeholder={placeholder} className={base} />
-    </div>
-  );
-}
+// function Field({
+//   label,
+//   as,
+//   rows,
+//   type = "text",
+//   placeholder,
+// }: {
+//   label: string;
+//   as?: "textarea";
+//   rows?: number;
+//   type?: string;
+//   placeholder?: string;
+// }) {
+//   const base =
+//     "mt-1 w-full rounded-lg border border-black/15 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black transition-all duration-300";
+//   if (as === "textarea") {
+//     return (
+//       <div>
+//         <label className="block text-sm font-medium">{label}</label>
+//         <textarea rows={rows} placeholder={placeholder} className={base} />
+//       </div>
+//     );
+//   }
+//   return (
+//     <div>
+//       <label className="block text-sm font-medium">{label}</label>
+//       <input type={type} placeholder={placeholder} className={base} />
+//     </div>
+//   );
+// }
