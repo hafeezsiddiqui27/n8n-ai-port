@@ -298,6 +298,9 @@ export const metadata: Metadata = {
     creator: "@HafeezuSiddiqui",
     // images: ["https://www.hafeezport.vercel.app/og-image.png"],
   },
+  other: {
+    "google-site-verification": "SgWmaPGBlxWvDxvsEIcvwPqgXeXxWvUrdOZnBFGqrlQ",
+  },
 };
 
 export default function RootLayout({
