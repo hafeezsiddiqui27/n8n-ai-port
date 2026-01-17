@@ -261,7 +261,7 @@ export const metadata: Metadata = {
     "automation engineer",
   ],
   authors: [
-    { name: "Hafeez Siddiqui", url: "https://www.hafeezport.vercel.app" },
+    { name: "Hafeez Siddiqui", url: "https://automatewithhafeez.vercel.app/" },
     {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/hafeez-uddin-ahmed-siddiqui",
@@ -269,15 +269,15 @@ export const metadata: Metadata = {
   ],
   creator: "Hafeez Siddiqui",
   publisher: "Hafeez Siddiqui",
-  metadataBase: new URL("https://www.hafeezport.vercel.app"),
+  metadataBase: new URL("https://automatewithhafeez.vercel.app/"),
   alternates: {
-    canonical: "https://www.hafeezport.vercel.app",
+    canonical: "https://automatewithhafeez.vercel.app/",
   },
   openGraph: {
     title: "Hafeez Siddiqui | n8n & Automation Developer",
     description:
       "n8n automation developer, AI developer, Next.js developer, and OpenAI Agents SDK expert. Check out my projects and services.",
-    url: "https://www.hafeezport.vercel.app",
+    url: "https://automatewithhafeez.vercel.app/",
     siteName: "Hafeez Portfolio",
     // images: [
     //   {
