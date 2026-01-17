@@ -169,9 +169,22 @@
 // export default Contact;
 "use client";
 
-import { FaLocationArrow } from "react-icons/fa6";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaLocationArrow,
+  FaXTwitter,
+} from "react-icons/fa6";
 import MagicButton from "./components/MagicButton";
-import Image from "next/image";
+
+import SocialLink from "./components/SocialLink";
+import { motion } from "framer-motion";
+const fadeUp = (delay = 0) => ({
+  initial: { opacity: 0, y: 24 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, margin: "-100px" },
+  transition: { duration: 0.6, delay },
+});
 
 export const socialMedia = [
   {
@@ -235,19 +248,25 @@ const Contact = () => {
 
       {/* Bottom bar */}
       <div className="mt-24 flex flex-col items-center gap-6">
-        <div className="flex items-center gap-4">
-          {socialMedia.map((info) => (
-            <a
-              key={info.id}
-              href={info.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 flex items-center bg-blue-900 justify-center rounded-md border border-black/10  text-black/70 hover:text-black hover:border-black transition-all duration-300"
-            >
-              <Image src={info.img} alt={info.alt} width={20} height={20} />
-            </a>
-          ))}
-        </div>
+        <motion.div
+          {...fadeUp(0.45)}
+          className="mt-8 flex items-center justify-center gap-6"
+        >
+          <SocialLink
+            href="https://www.linkedin.com/in/hafeez-uddin-ahmed-siddiqui"
+            label="LinkedIn"
+          >
+            <FaLinkedin size={20} />
+          </SocialLink>
+
+          <SocialLink href="https://github.com/hafeezsiddiqui27" label="GitHub">
+            <FaGithub size={20} />
+          </SocialLink>
+
+          <SocialLink href="https://x.com/HafeezuSiddiqui" label="X">
+            <FaXTwitter size={20} />
+          </SocialLink>
+        </motion.div>
 
         <p className="text-xs tracking-wide text-black/40 mt-4">
           © {new Date().getFullYear()} Hafeez Siddiqui

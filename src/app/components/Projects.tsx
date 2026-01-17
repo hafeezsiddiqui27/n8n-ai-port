@@ -329,6 +329,14 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "AI-Powered HR Automation System",
+    category: "Human Resources",
+    problem:
+      "Candidate evaluation was slow, inconsistent, and highly dependent on manual review, causing delays in hiring and bias in decisions.",
+    solution:
+      "Developed a fully automated HR workflow where AI evaluates all candidates, generates detailed summaries, strengths, and weaknesses, compares them, and ranks by an AI score—streamlining hiring and improving decision accuracy.",
+  },
+  {
     title: "Lead Generation Automation",
     category: "Revenue Operations",
     problem:
@@ -468,22 +476,21 @@ export default function Projects() {
                     {project.category}
                   </motion.div>
                 </div> */}
-                      <div className="md:col-span-4 flex md:justify-end items-start">
-  <motion.div
-    whileHover={{ x: 6 }}
-    transition={{ duration: 0.25 }}
-    className="flex items-center gap-4"
-  >
-    {/* Signal line */}
-    <span className="block h-px w-10 bg-black/60" />
+                <div className="md:col-span-4 flex md:justify-end items-start">
+                  <motion.div
+                    whileHover={{ x: 6 }}
+                    transition={{ duration: 0.25 }}
+                    className="flex items-center gap-4"
+                  >
+                    {/* Signal line */}
+                    <span className="block h-px w-10 bg-black/60" />
 
-    {/* Category */}
-    <span className="text-xs font-mono tracking-wide uppercase text-black/70">
-      {project.category}
-    </span>
-  </motion.div>
-</div>
-
+                    {/* Category */}
+                    <span className="text-xs font-mono tracking-wide uppercase text-black/70">
+                      {project.category}
+                    </span>
+                  </motion.div>
+                </div>
               </div>
             </motion.div>
           ))}
