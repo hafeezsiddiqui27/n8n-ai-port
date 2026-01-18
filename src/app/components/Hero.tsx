@@ -71,14 +71,14 @@ export default function Hero() {
             href="#contact"
             className="w-full sm:w-auto px-6 py-3 rounded-lg border border-black/15 font-medium hover:bg-black/5 transition-all duration-300 transform hover:-translate-y-1 text-center"
           >
-            Let&apos;s build together
+            Let&apos;s Automate together
           </a>
         </motion.div>
 
         {/* Stable Social Links */}
         <motion.div
           {...fadeUp(0.45)}
-          className="mt-8 flex items-center justify-center gap-6"
+          className="mt-8 flex items-center justify-center gap-6 mb-4"
         >
           <SocialLink
             href="https://www.linkedin.com/in/hafeez-uddin-ahmed-siddiqui"

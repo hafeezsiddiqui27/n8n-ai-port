@@ -41,7 +41,7 @@ export default function SocialLink({ href, label, children }: SocialLinkProps) {
         rounded-md 
         
         hover:shadow-md 
-        transition-all duration-300 
+        
         transform hover:-translate-y-1 hover:scale-105
         border-2
         border-black/10
