@@ -203,7 +203,7 @@ export default function Suggestions() {
 
               {/* Metrics */}
               {s.metrics && (
-                <p className="text-green-700 font-medium text-sm mt-1">
+                <p className="text-green-600 italic font-extralight text-sm mt-1">
                   {s.metrics}
                 </p>
               )}

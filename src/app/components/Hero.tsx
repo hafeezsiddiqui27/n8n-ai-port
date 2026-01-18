@@ -2,13 +2,13 @@
 
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import SocialLink from "./SocialLink";
+// import { FaLinkedin, FaGithub } from "react-icons/fa";
+// import { FaXTwitter } from "react-icons/fa6";
+// import SocialLink from "./SocialLink";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex flex-col items-center justify-center overflow-hidden pt-16">
+    <section className="relative min-h-[90vh] flex flex-col items-center justify-center overflow-hidden pt-8 pb-16">
       {/* Fixed backdrop */}
       <div className="pointer-events-none fixed inset-0 -z-10">
         <div className="absolute -top-24 left-1/2 -translate-x-1/2 h-72 w-[700px] rounded-full bg-black/5 blur-3xl" />
@@ -63,7 +63,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Stable Social Links */}
-        <motion.div className="mt-8 flex items-center justify-center gap-6 mb-4">
+        {/* <motion.div className="mt-8 flex items-center justify-center gap-6 mb-4">
           <SocialLink
             href="https://www.linkedin.com/in/hafeez-uddin-ahmed-siddiqui"
             label="LinkedIn"
@@ -78,7 +78,7 @@ export default function Hero() {
           <SocialLink href="https://x.com/HafeezuSiddiqui" label="X">
             <FaXTwitter size={20} />
           </SocialLink>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

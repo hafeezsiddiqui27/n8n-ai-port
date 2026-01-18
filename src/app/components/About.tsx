@@ -147,11 +147,11 @@ export default function About() {
   ];
 
   return (
-    <section className="relative max-w-6xl mx-auto px-4 sm:px-6 py-24">
+    <section className="relative max-w-6xl mx-auto px-4 sm:px-6 ">
       {/* Heading */}
       <motion.h2
         {...fadeUp(0)}
-        className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-12"
+        className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-4"
       >
         About Me
       </motion.h2>
@@ -160,7 +160,7 @@ export default function About() {
         {/* Left: Description */}
         <motion.div {...fadeUp(0.1)} className="space-y-6">
           <p className="text-black/70 text-lg sm:text-xl leading-relaxed">
-            I’m Hafeez Siddiqui, an automation specialist focused on helping teams reclaim hours every day. I design systems that handle repetitive tasks, streamline operations, and ensure work runs reliably without constant oversight.
+            I&apos;m Hafeez Siddiqui, an automation specialist focused on helping teams reclaim hours every day. I design systems that handle repetitive tasks, streamline operations, and ensure work runs reliably without constant oversight.
           </p>
           <p className="text-black/70 text-lg sm:text-xl leading-relaxed">
             From lead pipelines to internal workflows, I deliver solutions that are auditable, maintainable, and scalable—so your team can focus on strategy and growth, not routine operations.

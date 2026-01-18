@@ -331,7 +331,7 @@ export default function Projects() {
                   </p>
 
                   {project.metrics && (
-                    <p className="text-sm text-green-700 font-medium mt-2">
+                    <p className="text-sm text-green-600 italic font-extralight mt-2">
                       Impact: {project.metrics}
                     </p>
                   )}
