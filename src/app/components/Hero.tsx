@@ -6,13 +6,6 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import SocialLink from "./SocialLink";
 
-const fadeUp = (delay = 0) => ({
-  initial: { opacity: 0, y: 24 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true, margin: "-100px" },
-  transition: { duration: 0.6, delay },
-});
-
 export default function Hero() {
   return (
     <section className="relative min-h-[90vh] flex flex-col items-center justify-center overflow-hidden pt-16">
@@ -47,20 +40,14 @@ export default function Hero() {
         </div>
 
         {/* Subheading */}
-        <motion.p
-          {...fadeUp(0.2)}
-          className="mt-5 text-base sm:text-lg md:text-xl text-black/70 max-w-3xl mx-auto px-4"
-        >
+        <motion.p className="mt-5 text-base sm:text-lg md:text-xl text-black/70 max-w-3xl mx-auto px-4">
           I build automation workflows that eliminate repetitive tasks,
           streamline operations, and boost team productivity, letting your team
           focus on high-impact initiatives instead of routine work.
         </motion.p>
 
         {/* CTA Buttons */}
-        <motion.div
-          {...fadeUp(0.35)}
-          className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 px-4"
-        >
+        <motion.div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 px-4">
           <a
             href="#portfolio"
             className="w-full sm:w-auto px-6 py-3 rounded-lg bg-black text-white font-medium hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1 text-center"
@@ -76,10 +63,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Stable Social Links */}
-        <motion.div
-          {...fadeUp(0.45)}
-          className="mt-8 flex items-center justify-center gap-6 mb-4"
-        >
+        <motion.div className="mt-8 flex items-center justify-center gap-6 mb-4">
           <SocialLink
             href="https://www.linkedin.com/in/hafeez-uddin-ahmed-siddiqui"
             label="LinkedIn"
