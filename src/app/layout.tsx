@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hafeez Siddiqui | Enterprise n8n & AI Automation Developer",
+  title: "Hafeez Siddiqui | Automate Repetitive Tasks, Focus on Growth",
   description:
-    "Hire Hafeez Siddiqui — Expert in n8n automation, AI workflow systems, and OpenAI integrations. Helping US, UK, Canada, and Australia companies automate processes, save time, and scale efficiently.",
+    "I help teams and startups stop wasting hours on repetitive tasks. Hafeez Siddiqui designs automation workflows that connect systems, streamline operations, and let teams focus on high-value work and growth.",
   keywords: [
     "n8n automation developer",
     "AI workflow automation",
@@ -43,17 +43,17 @@ export const metadata: Metadata = {
     canonical: "https://automatewithhafeez.vercel.app/",
   },
   openGraph: {
-    title: "Hafeez Siddiqui | Enterprise n8n & AI Automation Developer",
+    title: "Hafeez Siddiqui | Automate Repetitive Tasks, Focus on Growth",
     description:
-      "Portfolio of Hafeez Siddiqui, helping US, UK, Canada, and Australia businesses automate workflows, integrate systems, and scale efficiently using n8n and AI solutions.",
+      "Stop wasting hours on manual tasks. Hafeez Siddiqui builds automation workflows that streamline operations, integrate systems, and free teams to focus on growth.",
     url: "https://automatewithhafeez.vercel.app/",
-    siteName: "Hafeez Portfolio",
+    siteName: "Automate with Hafeez",
     images: [
       {
         url: "https://automatewithhafeez.vercel.app/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Hafeez Siddiqui Portfolio | AI & Automation Developer",
+        alt: "Hafeez Siddiqui Portfolio | Automation & Workflow Developer",
       },
     ],
     locale: "en_US",
@@ -61,9 +61,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hafeez Siddiqui | Enterprise Automation & AI Developer",
+    title: "Hafeez Siddiqui | Automate Repetitive Tasks, Focus on Growth",
     description:
-      "Expert n8n and AI workflow developer helping high-value clients in US, UK, Canada, and Australia automate business processes and scale efficiently.",
+      "Hafeez Siddiqui helps teams and startups automate workflows, integrate systems, and focus on high-value work while saving hours daily.",
     creator: "@HafeezuSiddiqui",
     images: ["https://automatewithhafeez.vercel.app/og-image.png"],
   },
