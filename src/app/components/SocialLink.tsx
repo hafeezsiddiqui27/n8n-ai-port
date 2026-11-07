@@ -1,25 +1,4 @@
-// import { ReactNode } from "react";
 
-// interface SocialLinkProps {
-//   href: string;
-//   label: string;
-//   children: ReactNode;
-// }
-
-// export default function SocialLink({ href, label, children }: SocialLinkProps) {
-//   return (
-//     <a
-//       aria-label={label}
-//       href={href}
-//       target="_blank"
-//       rel="noreferrer"
-//       className="p-2 rounded-full border border-black/15 hover:bg-black/5 transition-all duration-300 transform hover:-translate-y-1"
-//     >
-//       <span className="sr-only">{label}</span>
-//       <span className="inline-flex">{children}</span>
-//     </a>
-//   );
-// }
 import { ReactNode } from "react";
 
 interface SocialLinkProps {

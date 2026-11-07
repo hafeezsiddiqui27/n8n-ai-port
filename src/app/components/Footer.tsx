@@ -1,46 +1,4 @@
-// export default function Footer() {
-//   return (
-//     <footer className="mt-16 border-t border-black/10">
-//       <div className="mx-auto max-w-6xl px-4 sm:px-6 py-8 md:py-10 flex flex-col md:flex-row items-center justify-between gap-4">
-//         <p className="text-sm text-black/70 text-center md:text-left">
-//           © {new Date().getFullYear()} Hafeez Siddiqui
-//         </p>
-//         <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4 text-sm">
-//           <a
-//             href="#about"
-//             className="hover:underline underline-offset-4 transition-all duration-300"
-//           >
-//             About
-//           </a>
-//           <a
-//             href="#services"
-//             className="hover:underline underline-offset-4 transition-all duration-300"
-//           >
-//             Services
-//           </a>
-//           <a
-//             href="#automations"
-//             className="hover:underline underline-offset-4 transition-all duration-300"
-//           >
-//             Automations
-//           </a>
-//           <a
-//             href="#portfolio"
-//             className="hover:underline underline-offset-4 transition-all duration-300"
-//           >
-//             Work
-//           </a>
-//           <a
-//             href="#contact"
-//             className="hover:underline underline-offset-4 transition-all duration-300"
-//           >
-//             Contact
-//           </a>
-//         </div>
-//       </div>
-//     </footer>
-//   );
-// }
+
 "use client";
 
 export default function Footer() {
